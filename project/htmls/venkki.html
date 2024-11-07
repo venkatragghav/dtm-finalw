@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="C:\Users\srini\OneDrive\Desktop\project\css\MAIN.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Player Profiles</title>
+</head>
+<body>
+
+<nav>
+    <div class="navi">
+        <div class="logo"><img src="C:\Users\srini\Downloads\file.png" alt="Logo"></div>
+    </div>
+    <div class="cons">
+        <div class="buttons">
+            <li><a href="sign in.html">Join Us</a></li>
+            <li><a href="sign in.html">Sign In</a></li>
+            <li><a href="login.html">Login</a></li>
+        </div>
+    </div>
+</nav>
+
+<div class="ads">
+    <img src="C:\Users\srini\OneDrive\Desktop\project\dump\maxim-hopman-xyDkHkvDYp4-unsplash.jpg" alt="Banner Image">
+    <div class="btmlft"><h1>Join a <span>club</span></h1></div>
+    <button class="now"><li><a href="#">Now</a></li></button>
+</div>
+
+<div class="categories">
+    <h2><b>Top Players</b></h2>
+    <div class="sec">
+        <!-- Player 1 -->
+        <div class="col-4">
+            <button onclick="loadPlayer('virat')">
+                <img src="C:\Users\srini\OneDrive\Desktop\project\dump\file (3).png" alt="Virat Kohli">
+                <h4>Virat Kohli</h4>
+                <h4>Cricket</h4>
+            </button>
+        </div>
+        <!-- Player 2 -->
+        <div class="col-4">
+            <button onclick="loadPlayer('ronaldo')">
+                <img src="C:\Users\srini\OneDrive\Desktop\project\dump\file (1).png" alt="Cristiano Ronaldo">
+                <h4>Cristiano Ronaldo</h4>
+                <h4>Football</h4>
+            </button>
+        </div>
+        <!-- More players as buttons... -->
+    </div>
+</div>
+
+<!-- Container to load player details dynamically -->
+<div id="playerDetails"></div>
+
+<!-- About Us Section -->
+<div class="abt1">
+    <h2>About Us</h2>
+    <div class="abt">
+        <div class="abutus">
+            <img src="C:\Users\srini\OneDrive\Desktop\project\dump\e38529f4-58bd-4603-8305-59706cd44d82.jpg" alt="About Us Image">
+        </div>
+        <div class="pa">
+            <p>We are a passionate four-member team... [Content truncated for brevity]</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function loadPlayer(player) {
+        let playerDetails = document.getElementById('playerDetails');
+
+        // Clear previous content
+        playerDetails.innerHTML = '';
+
+        if (player === 'virat') {
+            playerDetails.innerHTML = `
+                <div class="statsblock">
+                    <div class="photo">
+                        <img src="C:\\Users\\srini\\OneDrive\\Desktop\\project\\dump\\file (3).png" alt="Virat Kohli">
+                        <h4><b>Virat Kohli</b></h4>
+                    </div>
+                    <div class="bio">
+                        <h4>About <span class="highlight">Me</span></h4>
+                        <p>Hi, I’m Virat, a 26-year-old cricketer from India... [Content truncated for brevity]</p>
+                        <h7>Player <span class="highlight">Rating</span>: 9.1</h7>
+                        <h4>Match <span class="highlight">History</span>:</h4>
+                        <p>2023 Community Cup: Scored a brilliant solo goal... [Content truncated]</p>
+                        <button class="sub">Request Match</button>
+                    </div>
+                </div>`;
+        } else if (player === 'ronaldo') {
+            playerDetails.innerHTML = `
+                <div class="statsblock">
+                    <div class="photo">
+                        <img src="C:\\Users\\srini\\OneDrive\\Desktop\\project\\dump\\file (1).png" alt="Cristiano Ronaldo">
+                        <h4><b>Cristiano Ronaldo</b></h4>
+                    </div>
+                    <div class="bio">
+                        <h4>About <span class="highlight">Me</span></h4>
+                        <p>Hey, I’m Cristiano, a 26-year-old footballer from Portugal... [Content truncated for brevity]</p>
+                        <h7>Player <span class="highlight">Rating</span>: 9.4</h7>
+                        <h4>Match <span class="highlight">History</span>:</h4>
+                        <p>2023 Community Cup: Scored two goals in a 3-1 victory... [Content truncated]</p>
+                        <button class="sub">Request Match</button>
+                    </div>
+                </div>`;
+        }
+        // Additional players can be added here similarly...
+    }
+</script>
+
+</body>
+</html>

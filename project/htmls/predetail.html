@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:/Users/srini/OneDrive/Desktop/project/css/predetail.css">
+    <title>Personal Details</title>
+</head>
+<body>
+    <div class="form-container" id="animateddiv">
+        <form onsubmit="saveToLocalStorage(); return false;">
+            <h3>Personal Details</h3>
+            <input type="text" id="nameInput" placeholder="Name" required>
+            <input type="number" id="ageInput" placeholder="Age" required>
+            <select id="genderInput" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            <select id="sportInput" required>
+                <option value="" disabled selected>Preferred Sport</option>
+                <option value="Football">Football</option>
+                <option value="Cricket">Cricket</option>
+                <option value="Chess">Chess</option>
+                <option value="Volleyball">Volleyball</option>
+                <option value="Basketball">Basketball</option>
+            </select>
+            <select id="cityInput" required>
+                <option value="" disabled selected>City</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi">Delhi</option>
+            </select>
+            <input type="submit" value="Register Now" class="form-btn">
+        </form>
+    </div>
+
+    <script>
+        function saveToLocalStorage() {
+            const name = document.getElementById("nameInput").value;
+            const age = document.getElementById("ageInput").value;
+            const gender = document.getElementById("genderInput").value;
+            const sport = document.getElementById("sportInput").value;
+            const city = document.getElementById("cityInput").value;
+
+            localStorage.setItem("userName", name);
+            localStorage.setItem("userAge", age);
+            localStorage.setItem("userGender", gender);
+            localStorage.setItem("userSport", sport);
+            localStorage.setItem("userCity", city);
+
+            window.location.href = "profile.html";
+        }
+    </script>
+</body>
+</html>

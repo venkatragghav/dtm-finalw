@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Payment Bill</title>
+  <link rel="stylesheet" href="C:\Users\srini\OneDrive\Desktop\project\css\regis.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Football Tournament Registration</h1>
+    <form id="registrationForm">
+      <label for="teamName">Team Name:</label>
+      <input type="text" id="teamName" name="teamName" required>
+
+      <label for="players">Number of Players:</label>
+      <input type="number" id="players" name="players" min="1" required>
+
+      <label for="registrationFee">Registration Fee per Player (₹):</label>
+      <input type="number" id="registrationFee" name="registrationFee" value="500" readonly>
+
+      <button type="button" onclick="calculateTotal()">Calculate Total</button>
+    </form>
+
+    <div id="paymentBill" class="bill">
+      <h2>Payment Bill</h2>
+      <p id="teamDetails"></p>
+      <p id="totalAmount"></p>
+      <button id="payButton" onclick="processPayment()">Pay Now</button>
+    </div>
+  </div>
+
+  <script src="C:\Users\srini\OneDrive\Desktop\project\css\regis.js"></script>
+</body>
+</html>

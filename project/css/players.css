@@ -1,0 +1,140 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    background: #1f1e1e;
+}
+
+.cons{
+	position: relative;
+	left: 1200px;
+	top: -60px;
+}
+
+.buttons{
+	display:flex;
+	right: 70px;
+
+  flex-direction:row;
+  align-items:center;
+  list-style: none;
+  padding-top: 20px;
+  background: transparent;
+	cursor: pointer;
+	width: auto;
+	height: auto;
+	transition: transform 1s;
+}
+.buttons a{
+	position: relative;
+    right: 250px;
+	display: inline;
+	color:  black;
+	list-style: none;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	background: transparent;
+	margin: 10px;
+	
+	
+	
+
+	
+	
+}
+.buttons  :hover{
+
+color: #FF5F1F;
+text-decoration: underline;
+transform: translateY(-5px);
+
+
+
+}
+
+.navi{
+    		background-color: whitesmoke ;
+    		width: 100%;
+    		height: 70px;
+    		margin-top: 30px;
+    		border-radius: 50px;
+    		padding: 0;
+    }
+.logo img{
+ 	   	height: 150px;
+ 	   	width: 200px;
+ 	   	background: transparent;
+    }
+ .logo{
+    	background: transparent;
+    	margin: 0;
+    	padding: 0;
+    	position: relative;
+    	top: -40px;
+    }
+    
+.rating{
+	background: transparent;
+}
+.fa-star{
+	background: transparent;
+}
+.col-4 img{
+	width: 100%;
+	height: 200px;
+	border-radius:5px ;
+
+}.categories{
+    display: inline;
+}
+.categories h2{
+	margin: 30px;
+	border-left: 6px solid #FF5F1F;
+	padding-left:20px ;
+	position: relative;
+	font-size: 35px;
+	color: whitesmoke;
+}
+.col-4 a{
+	text-decoration: none;
+	list-style: none;
+	color: black;
+
+}
+.col-4{
+	
+	padding: 10px;
+	width: 200px;
+	margin-bottom: 50px ;
+	text-align: center;
+	background-color:whitesmoke;
+	transition: transform 0.2s;
+	border-radius: 25px;
+	text-decoration: none;
+}
+.col-4:hover{
+	transform: translateY(-5px);
+	background-color:#d9d9d9;
+
+
+}
+
+.sec{
+
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	
+}
+body{
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    background: #1f1e1e;
+       
+
+}

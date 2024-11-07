@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:/Users/srini/OneDrive/Desktop/project/css/profile.css">
+    <title>User Profile</title>
+    <script>
+        function displayStoredData() {
+            const name = localStorage.getItem("userName") || "No name provided";
+            const age = localStorage.getItem("userAge") || "No age provided";
+            const gender = localStorage.getItem("userGender") || "No gender provided";
+            const sport = localStorage.getItem("userSport") || "No preferred sport provided";
+            const city = localStorage.getItem("userCity") || "No city provided";
+            
+            document.getElementById("nameOutput").innerText = name;
+            document.getElementById("ageOutput").innerText = age;
+            document.getElementById("genderOutput").innerText = gender;
+            document.getElementById("sportOutput").innerText = sport;
+            document.getElementById("cityOutput").innerText = city;
+        }
+    </script>
+</head>
+<body onload="displayStoredData()">
+    <nav>
+        <div class="navi"><a href="main.html">
+            <div class="logo"><img src="C:/Users/srini/OneDrive/Desktop/project/dump/file.png" alt="Logo"></div></a>
+        </div>
+        <div class="cons">
+            <div class="buttons">
+                <span><a href="C:\Users\srini\OneDrive\Desktop\project\htmls\tour.html"><strong>Tournament</strong></a></span>
+                <span><a href="C:\Users\srini\OneDrive\Desktop\project\htmls\players.html"><strong>Players profile</strong></a></span>
+               <span><a href="C:\Users\srini\OneDrive\Desktop\project\htmls\profile.html"><strong>My profile</strong></a></span>
+            </div>
+        </div>
+    </nav>
+    <div class="profcon">
+        <h1>User Profile</h1>
+        <p><strong>Name:</strong> <span id="nameOutput"></span></p>
+        <p><strong>Age:</strong> <span id="ageOutput"></span></p>
+        <p><strong>Gender:</strong> <span id="genderOutput"></span></p>
+        <p><strong>Preferred Sport:</strong> <span id="sportOutput"></span></p>
+        <p><strong>City:</strong> <span id="cityOutput"></span></p>
+        <p><strong>review:</strong> no reviews</p>
+        <p><strong>rating:</strong>⭐  </p>
+    </div>
+
+ 
+</body>
+</html>

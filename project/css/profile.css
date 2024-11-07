@@ -1,0 +1,110 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    background: #1f1e1e;
+}
+
+.cons{
+	position: relative;
+	left: 1200px;
+	top: -60px;
+}
+
+.buttons{
+	display:flex;
+	right: 70px;
+
+  flex-direction:row;
+  align-items:center;
+  list-style: none;
+  padding-top: 20px;
+  background: transparent;
+	cursor: pointer;
+	width: auto;
+	height: auto;
+	transition: transform 1s;
+}
+.buttons a{
+	position: relative;
+    right: 250px;
+	display: inline;
+	color:  black;
+	list-style: none;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	background: transparent;
+	margin: 10px;
+	
+	
+	
+
+	
+	
+}
+.buttons  :hover{
+
+color: #FF5F1F;
+text-decoration: underline;
+transform: translateY(-5px);
+
+
+
+}
+
+.navi{
+    		background-color: whitesmoke ;
+    		width: 100%;
+    		height: 70px;
+    		margin-top: 30px;
+    		border-radius: 50px;
+    		padding: 0;
+    }
+.logo img{
+ 	   	height: 150px;
+ 	   	width: 200px;
+ 	   	background: transparent;
+    }
+ .logo{
+    	background: transparent;
+    	margin: 0;
+    	padding: 0;
+    	position: relative;
+    	top: -40px;
+    }
+.profcon{
+    
+    display: inline-block;
+    position: absolute;
+    padding: 20px;
+    top: 120px;
+    left: 500px;
+    width: auto;
+    height: auto;
+    margin: 60px;
+    background: rgba( 255, 255, 255, 0.25 );
+   
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}    
+.profcon h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    color: whitesmoke;
+
+}
+.profcon p{
+    font-size: 25px;
+    color: whitesmoke;
+    padding: 10px;
+    
+}
+.profcon strong{
+    color: #FF5F1F;
+}
